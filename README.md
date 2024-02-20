@@ -1,7 +1,7 @@
 # maintenance-scheduling
 ASP code related to preventive maintenance scheduling
 
-![An illustration of a schedule](https://github.com/asptools/maintenance-scheduling/assets/15263040/19356dd9-0b94-4e25-976e-24934463cf55|width=50)
+![An illustration of a schedule](https://github.com/asptools/maintenance-scheduling/assets/15263040/19356dd9-0b94-4e25-976e-24934463cf55|width=10)
 
 This directory contains the software related to papers on preventive maintenance scheduling.
 These papers are the following:
