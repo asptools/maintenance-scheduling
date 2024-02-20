@@ -1,6 +1,8 @@
 # maintenance-scheduling
 ASP code related to preventive maintenance scheduling
 
+[An illustration of a schedule](https://github.com/asptools/maintenance-scheduling/RuleML2023/schedule-uc+oc.pdf)
+
 (The following content in construction.)
 
 This directory contains the software related to papers on preventive maintenance scheduling.
