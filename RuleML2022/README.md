@@ -51,12 +51,20 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>time(1..h)</td>
   </tr>
     <tr>
-    <th>cov at T=0</th>
+    <th>cov(C,0)</th>
     <td>comp(C,R,L), L>0</td>
     <td>comp(C,R,L), L>0</td>
     <td>comp(C,R,L), L>0</td>
-    <td>comp(C,R,L), L>0</td>
-    <td>comp(C,R,L), L>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <th>cov(C,T)</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>comp(C,R,L), L>0, T=1..L</td>
+    <td>comp(C,R,L), L>0, T=1..L</td>
   </tr>
     <tr>
     <th>0 to 1</th>
