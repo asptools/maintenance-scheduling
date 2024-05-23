@@ -1,6 +1,11 @@
 <p align="center"><img src="images/integrated.png" width="200"></p>
 
-Integrated maintenance combines maintenance scheduling with production scheduling and resource scheduling.  The work reported in paper ... focuses on resource scheduling.  This means the scheduling of maintenance operations, maintenance workforce and training of the workforce.  In addition, the maintenance breaks and their duration are minimized which increases the availability of the production machinery and contributes to production scheduling. 
+From the perspective of an individual component, preventive maintenance scheduling is a very simple process:  
+the purpose is to renew the component when it is getting too old:
+
+   <img src="images/Reset.png" height="50">
+
+Integrated maintenance combines maintenance scheduling with production scheduling and resource scheduling.  The work reported in the paper ... focuses on resource scheduling.  This means the scheduling of maintenance operations, maintenance workforce, and training of the workforce.  In addition, the maintenance breaks and their duration are minimized which increases the availability of the production machinery and contributes to production scheduling.  
 
 The paper introduces three resource models:
 
@@ -35,7 +40,6 @@ The three resource models are designed to be compatible with each other.  Howeve
 <img src="images/interfaces.png" width="350">
 
 
-<img src="images/Reset.png" height="50">
 
 
 Files:
