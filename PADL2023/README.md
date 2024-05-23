@@ -1,25 +1,25 @@
-# Pruning-Modified Encodings for Preventive Maintenance Encoding
+### Pruning-Modified Encodings for Preventive Maintenance Encoding
 
-## How to Cite
+#### How to Cite
 
 ...
 
-## Errata to the Prior Art Encodings 
+#### Errata to the Prior Art Encodings 
 
 - service-cov-ocov.lp  -  '2-Level Encoding' 
 - service-cov.lp  - '2-Level (compact) Encoding' 
 - service-direct-cov.lp - '1-Level Encoding' 
 - service-scnt.lp - 'Elevator Encoding' 
 
-## Simplications to the Prior Art Encodings
+#### Simplications to the Prior Art Encodings
 
 ...
 
-## New baseline encodings
+#### New baseline encodings
 
 - 'Mixed Encoding' service-cov-mixed.lp
 
-## The Modified Encodings
+#### The Modified Encodings
 
 These corresponding encodings have pruning constrains
 
@@ -29,6 +29,6 @@ These corresponding encodings have pruning constrains
 - service-scnt-v1.mod3.lp
 - service-cov-mixed-v1.mod3.lp
 
-## References
+#### References
 
 ...
