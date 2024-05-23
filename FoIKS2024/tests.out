@@ -1,0 +1,148 @@
+Table 1. The effect of hard constraints on miscoverage
+
+
+
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t3 q4 p5 yes      26  26     26
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,3,4,5))
+Optimization : 26
+resource_model2 _______usage(("b","t","q","p"),(7,3,4,5))
+Optimization : 26
+resource_model3 _______usage(("b","t","q","p"),(7,3,4,5))
+Optimization : 26
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t3 q4 p4 yes      27 UNSAT  UNSAT
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,3,4,4))
+Optimization : 27
+UNSATISFIABLE
+UNSATISFIABLE
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t3 q4 p4 no       27  54     54
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,3,4,4))
+Optimization : 27
+resource_model2 _______usage(("b","t","q","p"),(7,3,4,4))
+Optimization : 54
+resource_model3 _______usage(("b","t","q","p"),(7,3,4,4))
+Optimization : 54
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t2 q4 p5 no       31  31     31
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,4,5))
+Optimization : 31
+resource_model2 _______usage(("b","t","q","p"),(7,2,4,5))
+Optimization : 31
+resource_model3 _______usage(("b","t","q","p"),(7,2,4,5))
+Optimization : 31
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t2 q4 p4 no       31  55     55
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,4,4))
+Optimization : 31
+resource_model2 _______usage(("b","t","q","p"),(7,2,4,4))
+Optimization : 55
+resource_model3 _______usage(("b","t","q","p"),(7,2,4,4))
+Optimization : 55
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t2 q3 p4 no       54  77     69
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,3,4))
+Optimization : 54
+resource_model2 _______usage(("b","t","q","p"),(7,2,3,4))
+Optimization : 77
+resource_model3 _______usage(("b","t","q","p"),(7,2,3,4))
+Optimization : 69
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t2 q3 p3 no       74  83     83
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,3,3))
+Optimization : 74
+resource_model2 _______usage(("b","t","q","p"),(7,2,3,3))
+Optimization : 83
+resource_model3 _______usage(("b","t","q","p"),(7,2,3,3))
+Optimization : 83
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t2 q2 p2 no       124 140    140
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,2,2))
+Optimization : 124
+resource_model2 _______usage(("b","t","q","p"),(7,2,2,2))
+Optimization : 140
+resource_model3 _______usage(("b","t","q","p"),(7,2,2,2))
+Optimization : 140
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t1 q1 p1 no       206 206    206
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,1,1,1))
+Optimization : 206
+resource_model2 _______usage(("b","t","q","p"),(7,1,1,1))
+Optimization : 206
+resource_model3 _______usage(("b","t","q","p"),(7,1,1,1))
+Optimization : 206
+
+Core  b  t  q  p  Pruned?  RM1 RM2    RM3
+26    b7 t0 q0 p0 no       245 245    245
+----------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,0,0,0))
+Optimization : 245
+resource_model2 _______usage(("b","t","q","p"),(7,0,0,0))
+Optimization : 245
+resource_model3 _______usage(("b","t","q","p"),(7,0,0,0))
+Optimization : 245
+
+
+Table 2. Automatic parameter optimization in cost-based integration
+
+
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+Core   7 7 7 5       7 0 0 0  870 (26∗20+(7+0+0+0)∗50+0)          26
+---------------------------------------------------------------------
+_______usage(("b","t","q","p"),(7,7,7,5)) __usage(7,0,0,0)
+Optimization : 870 26
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM1    7 7 7 5       7 2 5 4 1420 (26∗20+(7+2+5+4)∗50+0)          26
+---------------------------------------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,7,7,5)) __usage(7,2,5,4)
+Optimization : 1420 26
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM2    7 7 7 5       7 2 5 4 1535 (26∗20+(7+2+5+4)∗50+115)        26
+---------------------------------------------------------------------
+resource_model2 _______usage(("b","t","q","p"),(7,7,7,5)) __usage(7,2,5,4)
+Optimization : 1535 26
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM3    7 7 7 5       7 2 5 4 1535 (26∗20+(7+2+5+4)∗50+115)        26
+---------------------------------------------------------------------
+resource_model3 _______usage(("b","t","q","p"),(7,2,3,4)) __usage(7,2,3,4)
+Optimization : 2261 69
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM1    7 2 3 4       7 2 3 4 1880 (54∗20+(7+2+3+4)∗50+0)          54
+---------------------------------------------------------------------
+resource_model1 _______usage(("b","t","q","p"),(7,2,3,4)) __usage(7,2,3,4)
+Optimization : 1880 54
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM2    7 2 3 4       7 2 3 4 2403 (79∗20+(7+2+3+4)∗50+23)         79
+---------------------------------------------------------------------
+resource_model2 _______usage(("b","t","q","p"),(7,2,3,4)) __usage(7,2,3,3)
+Optimization : 2403 79
+
+Model  b t q p  Used b t q p Cost (mc*20+resources*50+salaries)   Mc.
+RM3    7 2 3 4       7 2 3 4 2261 (69∗20+(7+2+3+4)∗50+81)         69
+---------------------------------------------------------------------
+resource_model3 _______usage(("b","t","q","p"),(7,2,3,4)) __usage(7,2,3,4)
+Optimization : 2261 69
