@@ -43,6 +43,14 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>cov(C,T), ocov(C,T)</td>
   </tr>
     <tr>
+    <th>steps</th>
+    <td>time(0..h)</td>
+    <td>time(0..h)</td>
+    <td>time(0..h)</td>
+    <td>time(1..h)</td>
+    <td>time(1..h)</td>
+  </tr>
+    <tr>
     <th>cov at T=0</th>
     <td>comp(C,R,L), L>0</td>
     <td>comp(C,R,L), L>0</td>
