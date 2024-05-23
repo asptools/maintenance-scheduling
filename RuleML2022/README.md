@@ -84,75 +84,85 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
   </tr>
     <tr>
     <th>0 to 1</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,0), inc(C,T), not dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>not cov(C,T), not ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
+    <td>not cov(C,T,1), not cov(C,T,2), serv(C,T+1), not emi(C,T+1)</td>
+    <td>scnt(C,T,0), inc(C,T+1), not dec(C,T+1)</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
   </tr>
     <tr>
     <th>1 to 2</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,1), inc(C,T), not dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>cov(C,T), serv(C,T+1), not emi(C,T+1)</td>
+    <td>cov(C,T,1), serv(C,T+1), not emi(C,T+1)</td>
+    <td>scnt(C,T,1), inc(C,T+1), not dec(C,T+1)</td>
+    <td>cov(C,T,S1), cov(C,T,S2), S1<S2</td>
+    <td>cov(C,T), not ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
   </tr>
     <tr>
     <th>0-0</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,0), inc(C,T), dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>scnt(C,T,V), inc(C,T+1), dec(C,T+1), V=0</td>
+    <td>n/a</td>
+    <td>n/a</td>
   </tr>
     <tr>
     <th>1-1</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,1), inc(C,T), dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>cov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
+    <td>cov(C,T,N), not serv(C,T+1), not emi(C,T+1), N=1</td>
+    <td>scnt(C,T,N), not serv(C,T+1), not emi(C,T+1), N=1</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
+  </tr>
+    <tr>
+    <th>1-1</th>
+    <td>cov(C,T), serv(C,T+1), emi(C,T+1)</td>
+    <td>cov(C,T,N), serv(C,T+1), emi(C,T+1), N=1</td>
+    <td>scnt(C,T,N), serv(C,T+1), emi(C,T+1), N=1</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
+    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
   </tr>
     <tr>
     <th>2-2</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,2), inc(C,T), dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
+    <td>cov(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
+    <td>scnt(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
+    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
+    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
+  </tr>
+    <tr>
+    <th>2-2</th>
+    <td>ocov(C,T), serv(C,T+1), emi(C,T+1)</td>
+    <td>cov(C,T,N), serv(C,T+1), emi(C,T+1), N=2</td>
+    <td>scnt(C,T,N), serv(C,T+1), emi(C,T+1), N=2</td>
+    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
+    <td>ocov(C,T), serv(C,T+1), emi(C,T+1)</td>
   </tr>
     <tr>
     <th>2 to 1</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,2), not inc(C,T), dec(C,T)</td>
+    <td>ocov(C,T), not serv(C,T+1), emi(C,T+1)</td>
+    <td>cov(C,T,2), not serv(C,T+1), emi(C,T+1)</td>
+    <td>scnt(C,T,N), not serv(C,T+1), emi(C,T+1), N=2</td>
     <td></td>
     <td></td>
   </tr>
     <tr>
     <th>1 to 0</th>
-    <td></td>
-    <td></td>
-    <td>scnt(C,T-1,2), not inc(C,T), dec(C,T)</td>
-    <td></td>
-    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>scnt(C,T-1,N), not serv(C,T), emi(C,T), N=1</td>
+    <td>n/a</td>
+    <td>n/a</td>
+  </tr>
+    <tr>
+    <th>3</th>
+    <td>ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
+    <td>cov(C,T,2), serv(C,T+1), not emi(C,T+1)</td>
+    <td>scnt(C,T,2), serv(C,T+1), not emi(C,T+1)</td>
+    <td>ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
+    <td>ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
   </tr>
 </table>
 
-inc(C,T) :- serv(C,T).
-dec(C,T+R) :- serv(C,T), comp(C,R,_), time(T+R).
-dec(C,L+1) :- comp(C,R,L), 0<L, time(L+1).        % For lifetime L
-
-scnt(C,0,0) :- comp(C,R,0).
-scnt(C,0,1) :- comp(C,R,L), 0<L.                  % For lifetime L
-val(0..2).
-
-scnt(C,T,V+1) :- inc(C,T), not dec(C,T), scnt(C,T-1,V),    % Increase
-                 comp(C), time(T), val(V), val(V+1).
-
-scnt(C,T,V-1) :- not inc(C,T), dec(C,T), scnt(C,T-1,V),    % Decrease
-                 comp(C), time(T), val(V), val(V-1).
-
-scnt(C,T,V) :- scnt(C,T-1,V), not inc(C,T), not dec(C,T),  % Inertia 1
-               comp(C), time(T), val(V), time(T-1).
+* For easier comparison, the following changes has been made.  In Elevator Encoding, the predicate symbols dec/2 and inc/2 have been replaced with predicate symbols emi/2 and serv/2.  Predicat emi has been defined by emi(C,T+R) :- serv(C,T), comp(C,R,L), time(T+R).
+  
