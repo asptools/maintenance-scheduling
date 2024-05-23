@@ -5,9 +5,9 @@
 <img src="images/Reset.png" width="150" height="150">
 <img src="images/interfaces.png" width="150" height="150">
 <img src="images/ops1.png" width="150" height="150">
-<img src="images/ops2.png" width="150" height="150">
-<img src="images/ops3.png" width="150" height="150">
-<img src="images/params.png" width="150" height="150">
+<img src="images/ops2.png">
+<img src="images/ops3.png">
+<img src="images/params.png">
 
 Files:
 
