@@ -13,7 +13,20 @@
 
 #### Simplications to the Prior Art Encodings
 
-...
+cov(C,0) :- comp(C,R,L), L>0.
+cov(C,T+1)  :- cov(C,T), not serv(C,T+1), not emi(C,T+1), time(T+1).
+ocov(C,T+1) :- cov(C,T),     serv(C,T+1), not emi(C,T+1), time(T+1).
+
+cov(C,T+1)  :- not cov(C,T), serv(C,T+1), [ not ocov(C,T),  not emi(C,T+1)], time(T+1).
+                             
+cov(C,T+1) :- serv(C,T+1), emi(C,T+1), time(T+1), [ cov(C,T) ].
+
+cov(C,T+1) :- ocov(C,T), [ not serv(C,T+1),]      emi(C,T+1), time(T+1).
+
+ocov(C,T+1)   :- ocov(C,T), [ not serv(C,T+1),]  not emi(C,T+1), time(T+1).
+
+[ ocov(C,T+1) :- ocov(C,T),       serv(C,T+1),       emi(C,T+1), time(T+1). ]
+
 
 #### New baseline encodings
 
