@@ -68,7 +68,7 @@ The three resource models are designed to be compatible with each other.  Howeve
 
 <img src="images/interfaces.png" width="350">
 
-Furthermore, the parameters t,q, and p must be limits for the resource usage rather than the actual usage parameters.  The scheduling has to optimize their usage and the total cost of professionals along with the maintenance miscoverage that is being optimized by the PMS Core.   This is achieved through a new objective function that incorporates all the aspects into a weighted sum of different aspects of the costs.  
+Furthermore, the parameters t,q, and p must be limits for the resource usage rather than the actual usage parameters.  The scheduling has to optimize their usage and the total cost of professionals along with the maintenance miscoverage that is being optimized by the PMS Core.   This is achieved through a new objective function that incorporates all the aspects into a weighted sum of different aspects of the costs.  They are: uc=undercoverage, oc=overcoverage, used breaks, used slices, used tracks, used professionals, and used non-expert time slices and expert time slices:
 
 <img src="images/minim.png" width="350">
 
