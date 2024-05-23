@@ -79,7 +79,7 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>serv(C,T+1), not emi(C,T+1), cov(C,T)</td>
     <td>serv(C,T+1), not emi(C,T+1), cov(C,T,1)</td>
     <td>serv(C,T+1), not emi(C,T+1), scnt(C,T,1)</td>
-    <td>serv(C,T+1), not emi(C,T+1), cov(C,T), not ocov(C,T)</td>
+    <td>serv(C,T+1), not emi(C,T+1), cov(C,T), <br>[not ocov(C,T)]</td>
     <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
   </tr>
     <tr>
