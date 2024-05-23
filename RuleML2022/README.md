@@ -31,8 +31,8 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>cov(C,T)</td>
     <td>cov(C,T,1)</td>
     <td>scnt(C,T,1)</td>
-    <td>cov(C,T,S), cov(C,T)</td>
-    <td>cov(C,T,S), cov(C,T)</td>
+    <td>cov(C,T)</td>
+    <td>cov(C,T)</td>
   </tr>
     <tr>
     <th>over-coverage</th>
@@ -72,7 +72,7 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>serv(C,T+1), not emi(C,T+1), cov(C,T,1)</td>
     <td>serv(C,T+1), not emi(C,T+1), scnt(C,T,1)</td>
     <td>serv(C,T+1), not emi(C,T+1), cov(C,T), not ocov(C,T)</td>
-    <td>cov(C,T,S1), cov(C,T,S2), S1<S2</td>
+    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
   </tr>
     <tr>
     <th>2 to 1</th>
@@ -95,8 +95,8 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>not serv(C,T+1), not emi(C,T+1), cov(C,T), </td>
     <td>not serv(C,T+1), not emi(C,T+1), cov(C,T,N), N=1</td>
     <td>not serv(C,T+1), not emi(C,T+1), scnt(C,T,N), N=1</td>
-    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
-    <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
+    <td></td>
+    <td>s</td>
   </tr>
     <tr>
     <th>2-2</th>
@@ -104,7 +104,7 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>not serv(C,T+1), not emi(C,T+1), cov(C,T,N), N=2</td>
     <td>not serv(C,T+1), not emi(C,T+1), scnt(C,T,N), N=2</td>
     <td>not serv(C,T+1), not emi(C,T+1), ocov(C,T)</td>
-    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
+    <td></td>
   </tr>
     <tr>
     <th>1-1</th>
