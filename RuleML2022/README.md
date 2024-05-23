@@ -146,4 +146,5 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
   emi(C,L+1) :- time(L+1), comp(C,R,L), L>0. 
   ```
   
-Furhermore, the new encoding (Mixed Encoding) in this table differs from service-cov-mixed-v1.lp slightly.  The changed new encoding is stored as the file service-cov-mixed-v1x.lp.
+Furhermore, the new encoding (Mixed Encoding) in this table differs from service-cov-mixed-v1.lp slightly.  The changed new encoding is stored as the file service-cov-mixed-v2.lp.  None of the encodings has been included to the tests of the paper and the changed encoding service-cov-mixed-v2.lp has not been included to the tests of the follow-up paper in PADL2023.   The changed encoding is likely to be an improvement.
+ 
