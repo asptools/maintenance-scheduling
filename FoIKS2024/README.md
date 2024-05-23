@@ -1,4 +1,4 @@
-<img src="images/integrated.png" width="50" height="50">
+<img src="images/integrated.png" width="150" height="150">
 
 Files:
 
