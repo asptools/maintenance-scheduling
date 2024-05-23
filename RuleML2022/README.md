@@ -31,16 +31,16 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>cov(C,T)</td>
     <td>cov(C,T,1)</td>
     <td>scnt(C,T,1)</td>
-    <td>cov(C,T)</td>
-    <td>cov(C,T)</td>
+    <td>cov(C,T), not ocov(C,T)</td>
+    <td>cov(C,T), not ocov(C,T)</td>
   </tr>
     <tr>
     <th>over-coverage</th>
     <td>ocov(C,T)</td>
     <td>cov(C,T,2)</td>
     <td>scnt(C,T,2)</td>
-    <td>ocov(C,T)</td>
-    <td>ocov(C,T)</td>
+    <td>cov(C,T), ocov(C,T)</td>
+    <td>cov(C,T), ocov(C,T)</td>
   </tr>
     <tr>
     <th>cov at T=0</th>
