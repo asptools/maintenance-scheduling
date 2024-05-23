@@ -1,4 +1,4 @@
-# Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization
+### Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization
 
 From the perspective of an individual component, preventive maintenance scheduling is a simple process:  
 the purpose is to renew the component when it is getting too old:
