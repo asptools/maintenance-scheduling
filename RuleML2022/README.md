@@ -91,12 +91,28 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
   </tr>
     <tr>
+    <th>1 to 0</th>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>scnt(C,T-1,N), not serv(C,T), emi(C,T), N=1</td>
+    <td>n/a</td>
+    <td>n/a</td>
+  </tr>
+    <tr>
     <th>1 to 2</th>
     <td>cov(C,T), serv(C,T+1), not emi(C,T+1)</td>
     <td>cov(C,T,1), serv(C,T+1), not emi(C,T+1)</td>
     <td>scnt(C,T,1), inc(C,T+1), not dec(C,T+1)</td>
     <td>cov(C,T,S1), cov(C,T,S2), S1<S2</td>
     <td>cov(C,T), not ocov(C,T), serv(C,T+1), not emi(C,T+1)</td>
+  </tr>
+    <tr>
+    <th>2 to 1</th>
+    <td>ocov(C,T), not serv(C,T+1), emi(C,T+1)</td>
+    <td>cov(C,T,2), not serv(C,T+1), emi(C,T+1)</td>
+    <td>scnt(C,T,N), not serv(C,T+1), emi(C,T+1), N=2</td>
+    <td></td>
+    <td></td>
   </tr>
     <tr>
     <th>0-0</th>
@@ -115,6 +131,14 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>serv(C,T1), T=T1..T1+R-1, comp(C,R,_)</td>
   </tr>
     <tr>
+    <th>2-2</th>
+    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
+    <td>cov(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
+    <td>scnt(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
+    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
+    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
+  </tr>
+    <tr>
     <th>1-1</th>
     <td>cov(C,T), serv(C,T+1), emi(C,T+1)</td>
     <td>cov(C,T,N), serv(C,T+1), emi(C,T+1), N=1</td>
@@ -124,35 +148,11 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
   </tr>
     <tr>
     <th>2-2</th>
-    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
-    <td>cov(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
-    <td>scnt(C,T,N), not serv(C,T+1), not emi(C,T+1), N=2</td>
-    <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
-    <td>ocov(C,T), not serv(C,T+1), not emi(C,T+1)</td>
-  </tr>
-    <tr>
-    <th>2-2</th>
     <td>ocov(C,T), serv(C,T+1), emi(C,T+1)</td>
     <td>cov(C,T,N), serv(C,T+1), emi(C,T+1), N=2</td>
     <td>scnt(C,T,N), serv(C,T+1), emi(C,T+1), N=2</td>
     <td>cov(C,T,S1), cov(C,T,S2), S1>S2</td>
     <td>ocov(C,T), serv(C,T+1), emi(C,T+1)</td>
-  </tr>
-    <tr>
-    <th>2 to 1</th>
-    <td>ocov(C,T), not serv(C,T+1), emi(C,T+1)</td>
-    <td>cov(C,T,2), not serv(C,T+1), emi(C,T+1)</td>
-    <td>scnt(C,T,N), not serv(C,T+1), emi(C,T+1), N=2</td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <th>1 to 0</th>
-    <td>n/a</td>
-    <td>n/a</td>
-    <td>scnt(C,T-1,N), not serv(C,T), emi(C,T), N=1</td>
-    <td>n/a</td>
-    <td>n/a</td>
   </tr>
     <tr>
     <th>3</th>
