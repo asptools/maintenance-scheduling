@@ -84,7 +84,7 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
   </tr>
     <tr>
     <th>1 to 0</th>
-    <td>emi(C,T), scnt(C,T-1,N), not serv(C,T), N=1</td>
+    <td>emi(C,T), not serv(C,T), scnt(C,T-1,N), N=1</td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
