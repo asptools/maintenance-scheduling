@@ -1,12 +1,12 @@
 <img src="images/integrated.png" width="200">
 <img src="images/Benner.png" width="200">
-<img src="images/BennerFSM.png" height="150">
-<img src="images/BennerSimple.png" height="150">
-<img src="images/Reset.png" height="150">
+<img src="images/BennerFSM.png" height="50">
+<img src="images/BennerSimple.png" height="50">
+<img src="images/Reset.png" height="50">
 <img src="images/interfaces.png" width="350">
-<img src="images/ops1.png" heigth="150">
-<img src="images/ops2.png" height="150">
-<img src="images/ops3.png" height="150">
+<img src="images/ops1.png" heigth="100">
+<img src="images/ops2.png" height="100">
+<img src="images/ops3.png" height="80">
 <img src="images/params.png" width="550">
 
 Files:
