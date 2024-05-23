@@ -1,7 +1,6 @@
 ### Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization
 
-The work reported in the paper [Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization. 13th International Symposium on Foundations of Information and Knowledge Systems](https://link.springer.com/chapter/10.1007/978-3-031-56940-1_21) focuses on resource scheduling.  From the perspective of an individual component, preventive maintenance scheduling is a simple process:  
-the purpose is to renew the component when it is getting too old:
+The work reported in the paper [Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization. 13th International Symposium on Foundations of Information and Knowledge Systems](https://link.springer.com/chapter/10.1007/978-3-031-56940-1_21) focuses on resource scheduling.  From the perspective of an individual component, preventive maintenance scheduling is a simple process.  Tthe purpose is to renew the component when it is getting too old:
 
    <img src="../images/Reset.png" height="50">
 
