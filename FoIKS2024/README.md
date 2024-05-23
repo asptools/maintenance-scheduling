@@ -1,3 +1,6 @@
+![Integrated Maintenance](images/integrated.png|width=10)
+
+
 Files:
 
 * service-cov-ocov-v1.mod3.lp - the core Preventive Maintenance Scheduler
