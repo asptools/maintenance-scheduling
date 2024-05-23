@@ -3,7 +3,7 @@
 From the perspective of an individual component, preventive maintenance scheduling is a simple process:  
 the purpose is to renew the component when it is getting too old:
 
-   <img src="images/Reset.png" height="50">
+   <img src="../images/Reset.png" height="50">
 
 This is the PMS Core and it assumes the horizon (h), the number of breaks (b), and the description of the ages and intervals for each component.  Here is an example description:
 
@@ -14,17 +14,17 @@ comp(5, 9,0).  comp(6,11,2).  comp(7, 5,4).  comp(8, 8,0).
 
 Integrated maintenance combines maintenance scheduling with production scheduling and resource scheduling.  The work reported in the paper [Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization. 13th International Symposium on Foundations of Information and Knowledge Systems](https://link.springer.com/chapter/10.1007/978-3-031-56940-1_21) focuses on resource scheduling.  This means the scheduling of maintenance operations, maintenance workforce, and training of the workforce.  In addition, the maintenance breaks and their duration are minimized which increases the availability of the production machinery and contributes to production scheduling.  
 
-<p align="center"><img src="images/integrated.png" width="200"></p>
+<p align="center"><img src="../images/integrated.png" width="200"></p>
 
 The paper introduces three resource models:
 
 1. Quantitative resources:
 
-   <img src="images/params.png" width="550">
+   <img src="../images/params.png" width="550">
 
    Quantitative maintenance resources involve time slices, maintenance tracks, and professionals.  The resources are employed to perform the scheduled maintenance operations.  For each timeslice of the maintenance break, there can be one or more component(s) under maintenance.   Each component requires one or more professional(s) to do the servicing.  By allocating the components wisely, it is possible to achieve improvements in the usage of resources.  Below, there are three ways to schedule the same set of maintenance operations:
 
-   <img src="images/ops2.png" height="100"> <img src="images/ops3.png" height="100"> <img src="images/ops1.png" height="100">
+   <img src="../images/ops2.png" height="100"> <img src="../images/ops3.png" height="100"> <img src="../images/ops1.png" height="100">
 
 Such scheduling is based on the the information of the specified time slices (q), tracks (t), professionals (p), and the knowleged of the time and personnel requirements of each component, like in the following:
 
@@ -40,7 +40,7 @@ proreq(5,2).  proreq(6,3).  proreq(7,1).  proreq(8,2).
 
    Competence resources refer to the competence of the maintenance professionals and their related capacity to take responsibility of the maintenance of specific components.  In this model, the component-specific requirements for experts is satisfied by allocating a sufficient number of experts to each.  In Benner's model of expertise, there are several levels of expertise, but these are not elaborated in this work.
    
-   <img src="images/Benner.png" width="200">
+   <img src="../images/Benner.png" width="200">
 
    The allocation of experts is based on the competence matrix and the componentwise requirements, given in the following way:
 
@@ -56,21 +56,21 @@ proreq(5,2).  proreq(6,3).  proreq(7,1).  proreq(8,2).
 
    Training resources refer to the potential resources that involve teaching and learning.  One expert can train a novice (training resource) and then the novice becomes an expert and increases the capacity of the pool of professionals to handle different situations where the level expertice is a bottleneck for efficient maintenance operations.  Originally, Benner's from expert to novice model involves multiple stages:
 
-   <img src="images/BennerFSM.png" height="50">
+   <img src="../images/BennerFSM.png" height="50">
 
    However, the current model simplifies the professional development by reducing it to just two essential stages.
    
-   <img src="images/BennerSimple.png" height="50">
+   <img src="../images/BennerSimple.png" height="50">
 
 Interfaces and integration:
 
 The three resource models are designed to be compatible with each other.  However, they need one interface to get information from the core maintenance scheduler.   This interface is based on the components (c), the break indices (i), and the service operations (s).  
 
-<img src="images/interfaces.png" width="350">
+<img src="../images/interfaces.png" width="350">
 
 Furthermore, the parameters t,q, and p must be limits for the resource usage rather than the actual usage parameters.  The scheduling has to optimize their usage and the total cost of professionals along with the maintenance miscoverage that is being optimized by the PMS Core.   This is achieved through a new objective function that incorporates all the aspects into a weighted sum of different aspects of the costs.  They are: uc=undercoverage, oc=overcoverage, used breaks, used slices, used tracks, used professionals, and used non-expert time slices and expert time slices:
 
-<img src="images/minim.png" width="350">
+<img src="../images/minim.png" width="350">
 
 At this point, also the cost of employing a professional for a time slice is taken into account:
 
@@ -80,7 +80,7 @@ cost(5,2). cost(6,0). cost(7,2). cost(8,0).
 ```
 
 
-Files:
+Files in the directory _asp_:
 
 * service-cov-ocov-v1.mod3.lp - the core Preventive Maintenance Scheduler
 * mod3.lp - the pruning rules that are optionally included
