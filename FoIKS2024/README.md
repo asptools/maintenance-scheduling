@@ -1,6 +1,6 @@
 ### Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization
 
-From the perspective of an individual component, preventive maintenance scheduling is a simple process:  
+The work reported in the paper [Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization. 13th International Symposium on Foundations of Information and Knowledge Systems](https://link.springer.com/chapter/10.1007/978-3-031-56940-1_21) focuses on resource scheduling.  From the perspective of an individual component, preventive maintenance scheduling is a simple process:  
 the purpose is to renew the component when it is getting too old:
 
    <img src="../images/Reset.png" height="50">
@@ -12,7 +12,7 @@ comp(1, 5,2).  comp(2,10,0).  comp(3, 7,0).  comp(4, 4,3).
 comp(5, 9,0).  comp(6,11,2).  comp(7, 5,4).  comp(8, 8,0).  
 ```
 
-Integrated maintenance combines maintenance scheduling with production scheduling and resource scheduling.  The work reported in the paper [Integrating Competencies into Preventive Maintenance Scheduling with Answer Set Optimization. 13th International Symposium on Foundations of Information and Knowledge Systems](https://link.springer.com/chapter/10.1007/978-3-031-56940-1_21) focuses on resource scheduling.  This means the scheduling of maintenance operations, maintenance workforce, and training of the workforce.  In addition, the maintenance breaks and their duration are minimized which increases the availability of the production machinery and contributes to production scheduling.  
+Integrated maintenance combines maintenance scheduling with production scheduling and resource scheduling.   This means the scheduling of maintenance operations, maintenance workforce, and training of the workforce.  In addition, the maintenance breaks and their duration are minimized which increases the availability of the production machinery and contributes to production scheduling.  
 
 <p align="center"><img src="../images/integrated.png" width="200"></p>
 
