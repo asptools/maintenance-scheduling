@@ -1,5 +1,4 @@
-![Integrated Maintenance|5](images/integrated.png)
-
+<img src="images/integrated.png" width="50" height="50">
 
 Files:
 
