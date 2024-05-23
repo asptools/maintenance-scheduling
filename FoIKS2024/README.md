@@ -1,4 +1,4 @@
-![Integrated Maintenance](images/integrated.png)
+![Integrated Maintenance|50](images/integrated.png)
 
 
 Files:
