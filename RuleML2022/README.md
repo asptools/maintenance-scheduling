@@ -7,7 +7,7 @@ These baseline encodings were originally published in RuleML2022:
 - service-cov.lp  - '2-Level (compact) Encoding' 
 - service-direct-cov.lp - '1-Level Encoding' 
 
-The following table is the comparison of the PADL2023 encodings.   The 6th column describes the fifth model ('Mixed Encoding') that was published in PADL2023.
+The following table is the comparison of the PADL2023 encodings.   The Mixed Encoding was published in PADL2023 but is include (with slight changes) into the table for completeness.
 
 <table>
   <tr>
