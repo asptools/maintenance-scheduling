@@ -43,38 +43,6 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>ocov(C,T)</td>
   </tr>
     <tr>
-    <th>no lifetime</th>
-    <td>n/a</td>
-    <td>n/a</td>
-    <td>comp(C,R,0)</td>
-    <td>n/a</td>
-    <td>n/a</td>
-  </tr>
-    <tr>
-    <th>reset</th>
-    <td>serv(C,T)</td>
-    <td>serv(C,T)</td>
-    <td>inc(C,T)</td>
-    <td>n/a</td>
-    <td>serv(C,T)</td>
-  </tr>
-    <tr>
-    <th>comp(C,R,L), L>0, time(L+1)</th>
-    <td></td>
-    <td>emi(C,T)</td>
-    <td>dec(C,T)</td>
-    <td>emi(C,T)</td>
-    <td></td>
-  </tr>
-    <tr>
-    <th>comp(C,R,_), serv(C,T), time(T+R)</th>
-    <td>emi(C,T)</td>
-    <td>emi(C,T)</td>
-    <td>dec(C,T)</td>
-    <td>emi(C,T)</td>
-    <td>emi(C,T)</td>
-  </tr>
-    <tr>
     <th>cov at T=0</th>
     <td>comp(C,R,L), L>0</td>
     <td>comp(C,R,L), L>0</td>
@@ -164,5 +132,10 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
   </tr>
 </table>
 
-* For easier comparison, the following changes has been made.  In Elevator Encoding, the predicate symbols dec/2 and inc/2 have been replaced with predicate symbols emi/2 and serv/2.  Predicat emi has been defined by emi(C,T+R) :- serv(C,T), comp(C,R,L), time(T+R).
-  
+* For easier comparison, the following changes has been made.  In Elevator Encoding, the predicate symbols dec/2 and inc/2 have been replaced with predicate symbols emi/2 and serv/2.  Predicat emi has been defined by
+
+  ```
+  emi(C,T+R) :- time(T+R), serv(C,T), comp(C,R,L), time(T+R).
+  emi(C,L+1) :- time(L+1), comp(C,R,L), L>0. 
+  ```
+
