@@ -32,7 +32,7 @@ The following table is the comparison of the PADL2023 encodings.   The 6th colum
     <td>cov(C,T,1)</td>
     <td>scnt(C,T,1)</td>
     <td>cov(C,T,S), cov(C,T)</td>
-    <td></td>
+    <td>cov(C,T,S), cov(C,T)</td>
   </tr>
     <tr>
     <th>over-coverage</th>
