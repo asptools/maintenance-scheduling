@@ -21,12 +21,12 @@ Contributions:
 
 Although the abstract mentions the first encoding for the PM scheduling problem, the paper contains four related encodings.  These baseline encodings are:
 
-- service-scnt.lp - 'Elevator Encoding' -- This encoding is a planning-type encoding where every time step has a state that tells how many maintenance operations are covering the time step. 
-- service-cov.lp  - '2-Level (compact) Encoding' -- This encoding is a similar encoding that does not store a state when no maintenance operation covers the time step.
-- service-cov-ocov.lp  -  '2-Level Encoding' -- This encoding does not use a state counter but rather just two predicates, cov and ocov telling whether the timestep is covered once or twice. 
-- service-direct-cov.lp - '1-Level Encoding' -- This encoding has two predicates cov and ocov, but it is not based on information propagation but rather on direct consequences from the servicing and interval lengths.  The cov predicate holds for timesteps that are covered once or twice, thus the state space is partitioned differently than in other encodings.
+- `service-scnt-v1.lp` - 'Elevator Encoding' -- This encoding is a planning-type encoding where every time step has a state that tells how many maintenance operations are covering the time step. 
+- `service-cov-v1.lp`  - '2-Level (compact) Encoding' -- This encoding is a similar encoding that does not store a state when no maintenance operation covers the time step.
+- `service-cov-ocov-v1.lp`  -  '2-Level Encoding' -- This encoding does not use a state counter but rather just two predicates, cov and ocov telling whether the timestep is covered once or twice. 
+- `service-direct-cov-v1.lp` - '1-Level Encoding' -- This encoding has two predicates cov and ocov, but it is not based on information propagation but rather on direct consequences from the servicing and interval lengths.  The cov predicate holds for timesteps that are covered once or twice, thus the state space is partitioned differently than in other encodings.
 
-The following table is the comparison of the PADL2023 encodings.   In addition, the Mixed Encoding published later in PADL2023 is also included (with slight changes) in the table.
+The following table is the comparison of the PADL2023 encodings.   In addition, the Mixed Encoding published later in PADL2023 as `service-coc-mixed-v1.lp` is also included as `service-coc-mixed-v2.lp` (with slight changes) in the table.
 
 <table>
   <tr>
@@ -169,5 +169,5 @@ The following table is the comparison of the PADL2023 encodings.   In addition, 
 
 In the 1- to 2-fold coverage increments of Mixed encoding, the condition `not ocov(C,T)` has been dropped as redundant.  There is the constraint that blocks increments from 2- to 3-fold coverage. 
   
-Furthermore, the new encoding (Mixed Encoding) in this table differs from service-cov-mixed-v1.lp slightly.  The changed new encoding is stored as the file service-cov-mixed-v2.lp.  None of the encodings has been included in the tests of the paper and the changed encoding service-cov-mixed-v2.lp has not been included in the tests of the follow-up paper in PADL2023.   The changed encoding is likely to be an improvement.
+Furthermore, the new encoding (Mixed Encoding) in this table differs from `service-cov-mixed-v1.lp` slightly.  The changed new encoding is stored as the file `service-cov-mixed-v2.lp`.  None of the encodings has been included in the tests of the paper and the changed encoding `service-cov-mixed-v2.lp` has not been included in the tests of the follow-up paper in PADL2023.   The changed encoding is likely to be an improvement.
  
