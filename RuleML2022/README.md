@@ -4,9 +4,9 @@
 
 Anssi Yli-Jyrä, Tomi Janhunen: [Applying Answer Set Optimization to Preventive Maintenance Scheduling for Rotating Machinery](https://link.springer.com/chapter/10.1007/978-3-031-21541-4_1). Rules and Reasoning - 6th International Joint Conference on Rules and Reasoning, [RuleML+RR 2022](https://2022.declarativeai.net/events/ruleml-rr), Berlin, Germany, September 26-28, 2022, Proceedings. Lecture Notes in Computer Science 13752, Springer 2022, pages 3-19.
 
-###### Abstract
+##### Abstract
 
-Preventive maintenance (PM) of manufacturing units aims at maintaining the operable condition of the production line while optimizing the maintenance timing and the loss of productivity during maintenance operations. The lesser studied type of preventive maintenance understands a production line as a single machine with multiple components of different maintenance needs. 
+Preventive maintenance (PM) of manufacturing units aims at maintaining the operable condition of the production line while optimizing the maintenance timing and the loss of productivity during maintenance operations. The lesser-studied type of preventive maintenance understands a production line as a single machine with multiple components of different maintenance needs. 
 
 - This is relevant when rotating machinery is deployed, e.g., in the paper and steel industries, in the mass production of raw materials consumed by other businesses.
 - A failure in any stage of the production line has the potential of making the entire machine inoperable and enforcing a shutdown and corrective maintenance costs.
@@ -160,7 +160,7 @@ The following table is the comparison of the PADL2023 encodings.   In addition, 
   </tr>
 </table>
 
-* For easier comparison, the following changes has been made.  In Elevator Encoding, the predicate symbols dec/2 and inc/2 have been replaced with predicate symbols emi/2 and serv/2.  Predicat emi has been defined by
+* For easier comparison, the following changes have been made.  In Elevator Encoding, the predicate symbols dec/2 and inc/2 have been replaced with predicate symbols emi/2 and serv/2.  Predicate `emi` has been defined by
 
   ```
   emi(C,T+R) :- time(T+R), serv(C,T), comp(C,R,L), time(T+R).
@@ -169,5 +169,5 @@ The following table is the comparison of the PADL2023 encodings.   In addition, 
 
 In the 1- to 2-fold coverage increments of Mixed encoding, the condition `not ocov(C,T)` has been dropped as redundant.  There is the constraint that blocks increments from 2- to 3-fold coverage. 
   
-Furhermore, the new encoding (Mixed Encoding) in this table differs from service-cov-mixed-v1.lp slightly.  The changed new encoding is stored as the file service-cov-mixed-v2.lp.  None of the encodings has been included to the tests of the paper and the changed encoding service-cov-mixed-v2.lp has not been included to the tests of the follow-up paper in PADL2023.   The changed encoding is likely to be an improvement.
+Furthermore, the new encoding (Mixed Encoding) in this table differs from service-cov-mixed-v1.lp slightly.  The changed new encoding is stored as the file service-cov-mixed-v2.lp.  None of the encodings has been included in the tests of the paper and the changed encoding service-cov-mixed-v2.lp has not been included in the tests of the follow-up paper in PADL2023.   The changed encoding is likely to be an improvement.
  
