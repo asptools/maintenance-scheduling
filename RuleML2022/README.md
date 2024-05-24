@@ -1,13 +1,32 @@
-## The Prior Art Encodings
+## Applying Answer Set Optimization to Preventive Maintenance Scheduling for Rotating Machinery
 
-These baseline encodings were originally published in RuleML2022:
+##### How to Cite
 
-- service-scnt.lp - 'Elevator Encoding' 
-- service-cov-ocov.lp  -  '2-Level Encoding' 
-- service-cov.lp  - '2-Level (compact) Encoding' 
-- service-direct-cov.lp - '1-Level Encoding' 
+Anssi Yli-Jyrä, Tomi Janhunen: [Applying Answer Set Optimization to Preventive Maintenance Scheduling for Rotating Machinery](https://link.springer.com/chapter/10.1007/978-3-031-21541-4_1). Rules and Reasoning - 6th International Joint Conference on Rules and Reasoning, [RuleML+RR 2022](https://2022.declarativeai.net/events/ruleml-rr), Berlin, Germany, September 26-28, 2022, Proceedings. Lecture Notes in Computer Science 13752, Springer 2022, pages 3-19.
 
-The following table is the comparison of the PADL2023 encodings.   The Mixed Encoding was published in PADL2023 but is include (with slight changes) into the table for completeness.
+###### Abstract
+
+Preventive maintenance (PM) of manufacturing units aims at maintaining the operable condition of the production line while optimizing the maintenance timing and the loss of productivity during maintenance operations. The lesser studied type of preventive maintenance understands a production line as a single machine with multiple components of different maintenance needs. 
+
+- This is relevant when rotating machinery is deployed, e.g., in the paper and steel industries, in the mass production of raw materials consumed by other businesses.
+- A failure in any stage of the production line has the potential of making the entire machine inoperable and enforcing a shutdown and corrective maintenance costs.
+
+Contributions: 
+
+1. This work gives an abstract formalization of PM scheduling for multi-component machines as an optimization problem.  To provide a lower bound for the complexity of the optimization problem, we prove that the underlying decision problem is NP-complete for varying-size multi-component machines and scheduling timelines.
+2. Besides the formalization, the second main contribution of the paper is due to the practical need to solve the problem in industrial applications: the work gives the first encoding of the PM scheduling problem using Answer Set Optimization (ASO). Some preliminary experiments are conducted and reported to set the scene for further algorithm development.
+
+
+## The First Encoding(s)
+
+Although the abstract mentions the first encoding for the PM scheduling problem, the paper contains four related encodings.  These baseline encodings are:
+
+- service-scnt.lp - 'Elevator Encoding' -- This encoding is a planning-type encoding where every time step has a state that tells how many maintenance operations are covering the time step. 
+- service-cov.lp  - '2-Level (compact) Encoding' -- This encoding is a similar encoding that does not store a state when no maintenance operation covers the time step.
+- service-cov-ocov.lp  -  '2-Level Encoding' -- This encoding does not use a state counter but rather just two predicates, cov and ocov telling whether the timestep is covered once or twice. 
+- service-direct-cov.lp - '1-Level Encoding' -- This encoding has two predicates cov and ocov, but it is not based on information propagation but rather on direct consequences from the servicing and interval lengths.  The cov predicate holds for timesteps that are covered once or twice, thus the state space is partitioned differently than in other encodings.
+
+The following table is the comparison of the PADL2023 encodings.   In addition, the Mixed Encoding published later in PADL2023 is also included (with slight changes) in the table.
 
 <table>
   <tr>
