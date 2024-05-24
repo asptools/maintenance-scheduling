@@ -1,4 +1,4 @@
-## Pruning-Modified Encodings for Preventive Maintenance Encoding
+## Pruning Redundancy in Answer Set Optimization Applied to Preventive Maintenance Scheduling
 
 #### How to Cite
 
