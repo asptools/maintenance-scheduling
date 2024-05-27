@@ -1,0 +1,20 @@
+set yrange [0.02:20000]
+set xrange [0:16]
+set title "Runtime in Seconds" font "Computer Modern Roman,36"
+set tics font "Computer Modern Roman,22"
+set lmargin 20
+set bmargin 2
+set rmargin 5
+set key right bot
+set key font "Computer Modern Roman,18"
+set logscale y
+set terminal postscript color
+set output "runtimes.ps"
+plot 'times-cov-ocov-oc0-usc.txt' smooth sbezier t 'usc/uc' lt rgb "red" lw 3, \
+     'times-cov-ocov-oc0-bb.txt' smooth sbezier t 'bb/uc' lt rgb "blue" lw 3, \
+     'times-cov-ocov-oc1-usc.txt' smooth sbezier t 'usc/mc' lt rgb "purple" lw 3, \
+     'times-cov-ocov-oc1-bb.txt' smooth sbezier t 'bb/mc' lt rgb "green" lw 3
+set terminal x11
+replot
+pause -1 "Hit return to continue"
+
