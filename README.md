@@ -11,4 +11,4 @@ This directory contains the software related to papers on preventive maintenance
    
 <p align="center"><img src="images/integrated.png" width="200"></p>
 
-The corresponding software -- mainly the ASP code -- is in three subdirectories: RuleML2022, PADL2023, and FoIKS2024.  The software also includes the shell scripts of the directory `bin-for-slurms` directory, but not the ASP solvers (gringo, clasp, clingo, wasp and clingo-dl). Gringo, clasp, clingo and clingo-dl are obtained under the MIT License from Potassco, the [Potsdam Answer Set Solving Collection](https://potassco.org/).  WASP is obtained under the Apache License from [https://alviano.github.io/wasp/]. 
+The corresponding software -- mainly the ASP code -- is in three subdirectories: RuleML2022, PADL2023, and FoIKS2024.  The software also includes the shell scripts of the directory `bin-for-slurms`, but not the ASP solvers (gringo, clasp, clingo, wasp and clingo-dl). Gringo, clasp, clingo and clingo-dl are obtained under the MIT License from Potassco, the [Potsdam Answer Set Solving Collection](https://potassco.org/).  WASP is obtained under the Apache License from [https://alviano.github.io/wasp/]. 
