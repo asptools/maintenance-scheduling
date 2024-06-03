@@ -1,6 +1,6 @@
 % Optimal allocation of service times for multi-component systems
 %
-% (c) 2022 Tomi Janhunen
+% 2022/2023/2024 © Tomi Janhunen, Anssi Yli-Jyrä, Masood Feyzbakhsh Rankooh
 
 % Parameters
 

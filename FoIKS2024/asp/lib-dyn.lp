@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 % Define expertise as a function of time, progressively:
 expert(P,C,1)   :- p(P), expert(P,C),     i(1).
 expert(P,C,I+1) :- p(P), expert(P,C,I),   i(I+1). 

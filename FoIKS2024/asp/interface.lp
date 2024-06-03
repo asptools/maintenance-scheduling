@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 % Assumes b, comp/3, break/1, serv/2; Provides i/1, c/1, s/2, oc/2, uc/2.
 
 _______usage(("b","t","q","p"),(b,t,q,p)).

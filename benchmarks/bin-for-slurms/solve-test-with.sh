@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 2022/2023/2024 © Janhunen, Tomi
+
 BIN=$HOME/bench/bin
 
 #SBATCH -p normal

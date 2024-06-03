@@ -1,4 +1,5 @@
-% (c) 2022 Tomi Janhunen, Anssi Yli-Jyrä, Masood F. Rankooh
+% 2022/2023/2024 © Tomi Janhunen, Anssi Yli-Jyrä, Masood Feyzbakhsh Rankooh
+
 % Constraints
 
 :- comp(C,R,L), break(T1), not cov(C,T1), not ocov(C,T1).

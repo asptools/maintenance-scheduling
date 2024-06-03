@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 2022/2023/2024 © Janhunen, Tomi and Yli-Jyrä, Anssi
+
 BIN=$HOME/bench/bin
 
 # Wrapper for more exact timing a test run and selecting the pipeline

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 2022/2023/2024 © Janhunen, Tomi
+
 DIR=$HOME/bench
 BIN=$DIR/bin
 IN=$DIR/in/$2

@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 % Assumes q, s/2, durreq/2, i/1, proreq/2. Provides: op/3.
 % Choose one time slice to start each operation
 resource_model1 :- not resource_model2, not resource_model3.

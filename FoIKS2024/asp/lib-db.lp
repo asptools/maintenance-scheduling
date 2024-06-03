@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 comp(1, 5,2).  durreq(1,2).  proreq(1,2).  expreq(1,1).
 comp(2,10,0).  durreq(2,1).  proreq(2,2).  expreq(2,1).
 comp(3, 7,0).  durreq(3,1).  proreq(3,1).  expreq(3,1).

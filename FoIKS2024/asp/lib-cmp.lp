@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 p(1..p).
 resource_model2 :- not resource_model3.
 { e(I,(C,Q),P) : p(P), expert(P,C) } = EN :-

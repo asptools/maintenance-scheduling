@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script for renaming slurm-*.out files
+# 2022/2023/2024 © Janhunen, Tomi
 
 for f in $*
 do

@@ -1,3 +1,4 @@
+% (c) 2022 Anssi Yli-Jyrä
 
 echo "Table 1. The effect of hard constraints on miscoverage"
 echo

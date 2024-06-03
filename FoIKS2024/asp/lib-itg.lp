@@ -1,3 +1,5 @@
+% 2023/2024 © Anssi Yli-Jyrä
+
 % Assumes s/2, op/3, i/1, uc/2, oc/2, cost/2, o/3, e/3.
 maxb(M) :- M = #count{ I: s(I,C)    }.                    % used breaks
 t(T)    :- T = #count{ C: op(I,C,Q) }, i(I), slice(Q).    % implicit tracks
